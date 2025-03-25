@@ -44,33 +44,9 @@ class SuspilneParser:
 
         document = annotator.create_document(metadata=metadata)
 
-        SuspilneParser._remove_unwanted_containers(content_container)
-
         SuspilneParser._process_content_elements(content_container, annotator, document)
 
         return document
-    @staticmethod
-    def _remove_unwanted_containers(container: Tag) -> None:
-        """
-        Remove unwanted containers from the content before processing.
-
-        Args:
-            container: The main content container
-        """
-
-        unwanted_text = [
-            'Допоможіть нам стати кращими, розповівши про свій досвід користування сайтом Суспільного.',
-            "Пройдіть це коротке опитування, воно займе до 5 хвилин вашого часу. Дякуємо!",
-            'Читайте і дивіться Суспільне',
-            "Telegram | Viber | Instagram | Twitter | YouTube | Facebook | TikTok",
-        ]
-
-        elements = container.find_all(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'blockquote'])
-
-        for element in elements:
-            for text in unwanted_text:
-                if text in element.text:
-                    element.decompose()
 
     @staticmethod
     def _clean_text(text: str) -> str:
