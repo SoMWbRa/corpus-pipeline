@@ -1,4 +1,3 @@
-from abc import ABC, abstractmethod
 from lxml import etree
 from sources.annotator.abstract_annotator import AbstractAnnotator
 
@@ -85,3 +84,50 @@ class XMLAnnotator(AbstractAnnotator):
         Get the XML document as a formatted string.
         """
         return etree.tostring(document, pretty_print=True, encoding="unicode")
+
+    def update_elements(self, document, update_fn):
+        """
+        Iterate through the document and update text in elements.
+
+        Args:
+            document: The XML document.
+            update_fn: A function that takes a string and returns an updated string.
+
+        Returns:
+            The updated XML document.
+        """
+        doc_element = document.find("document")
+
+        for element in doc_element.iter():
+            if element.text and element.tag in {"p", "h", "q", "li", "ol", "ul"}:  # Ensure lists are included
+                element.text = update_fn(element.text)
+
+        return document
+
+    def add_warnings(self, document, warnings):
+        """
+        Add warnings to the document.
+        """
+        if not warnings:
+            return  # No warnings, skip
+
+        warnings_section = document.find("warnings")
+        if warnings_section is None:
+            warnings_section = etree.SubElement(document, "warnings")
+
+        for warning in warnings:
+            etree.SubElement(warnings_section, "warning").text = warning
+
+    def add_errors(self, document, errors):
+        """
+        Add errors to the document.
+        """
+        if not errors:
+            return  # No errors, skip
+
+        errors_section = document.find("errors")
+        if errors_section is None:
+            errors_section = etree.SubElement(document, "errors")
+
+        for error in errors:
+            etree.SubElement(errors_section, "error").text = error

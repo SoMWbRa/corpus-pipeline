@@ -1,11 +1,10 @@
 from bs4 import BeautifulSoup, Tag, NavigableString
-from typing import List, Any
+from typing import Any
 import html
 import re
 
 from sources.annotator.abstract_annotator import AbstractAnnotator
 from sources.record.abstract_record import Metadata
-from sources.record.suspilne_record import SuspilneRecord
 
 
 class SuspilneParser:

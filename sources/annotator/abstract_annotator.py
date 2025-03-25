@@ -96,3 +96,28 @@ class AbstractAnnotator(ABC):
             Result document
         """
         pass
+
+    def update_elements(self, document, update_fn):
+        """
+        Iterate through the document and update text in elements.
+
+        Args:
+            document: The XML document.
+            update_fn: A function that takes a string and returns an updated string.
+
+        Returns:
+            The updated XML document.
+        """
+        pass
+
+    def add_warnings(self, document, warnings):
+        """
+        Add warnings to the document.
+        """
+        pass
+
+    def add_errors(self, document, errors):
+        """
+        Add errors to the document.
+        """
+        pass
