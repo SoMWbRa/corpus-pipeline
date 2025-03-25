@@ -76,9 +76,7 @@ class XMLAnnotator(AbstractAnnotator):
         """
         Add a quote to the XML document.
         """
-        doc_element = document.find("document")
-        etree.SubElement(doc_element, "quote").text = text
-        return document
+        self.add_paragraph(document, text)
 
     def get_string(self, document):
         """
