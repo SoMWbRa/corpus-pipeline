@@ -100,7 +100,11 @@ class XMLAnnotator(AbstractAnnotator):
 
         for element in doc_element.iter():
             if element.text and element.tag in {"p", "h", "q", "li", "ol", "ul"}:  # Ensure lists are included
-                element.text = update_fn(element.text)
+                updated_text, id = update_fn(element.text)
+
+                element.text = updated_text
+                if id:
+                    element.set("id", id)
 
         return document
 
@@ -115,8 +119,11 @@ class XMLAnnotator(AbstractAnnotator):
         if warnings_section is None:
             warnings_section = etree.SubElement(document, "warnings")
 
-        for warning in warnings:
-            etree.SubElement(warnings_section, "warning").text = warning
+        for id, warnings in warnings:
+            for warning in warnings:
+                warning_element = etree.SubElement(warnings_section, "warning")
+                warning_element.text = warning
+                warning_element.set("id", id)
 
     def add_errors(self, document, errors):
         """
@@ -129,5 +136,8 @@ class XMLAnnotator(AbstractAnnotator):
         if errors_section is None:
             errors_section = etree.SubElement(document, "errors")
 
-        for error in errors:
-            etree.SubElement(errors_section, "error").text = error
+        for id, errors in errors:
+            for error in errors:
+                error_element = etree.SubElement(errors_section, "error")
+                error_element.text = error
+                error_element.set("id", id)
