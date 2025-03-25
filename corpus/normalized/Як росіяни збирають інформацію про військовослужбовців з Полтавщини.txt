@@ -26,7 +26,4 @@
     <p>Читайте і дивіться Суспільне Полтава на платформах:</p>
     <p>Telegram | Viber | Instagram | Twitter | YouTube | Facebook | TikTok</p>
   </document>
-  <warnings>
-    <warning>warnings</warning>
-  </warnings>
 </root>

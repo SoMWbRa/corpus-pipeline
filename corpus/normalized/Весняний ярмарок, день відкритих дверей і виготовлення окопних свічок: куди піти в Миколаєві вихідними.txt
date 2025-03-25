@@ -86,7 +86,4 @@
     <p>Миколаївський зоопарк працює щодня, з 1 грудня з 09:00 до 17:00, каси — до 16:00.</p>
     <p>Слідкуйте за головними новинами Миколаєва та області у WhatsApp, Telegram, Viber, YouTube, TikTok, Facebook та Instagram.</p>
   </document>
-  <warnings>
-    <warning>warnings</warning>
-  </warnings>
 </root>
