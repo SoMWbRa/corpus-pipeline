@@ -26,17 +26,11 @@ class XMLAnnotator(AbstractAnnotator):
         meta = etree.SubElement(root, "metadata")
 
         if metadata:
-            etree.SubElement(meta, "title").text = metadata.title
-            etree.SubElement(meta, "source").text = metadata.source
+            meta_dict = vars(metadata) if hasattr(metadata, "__dict__") else metadata
 
-            if metadata.author:
-                etree.SubElement(meta, "author").text = metadata.author
-
-            if metadata.language:
-                etree.SubElement(meta, "language").text = metadata.language
-
-            if metadata.publication_time:
-                etree.SubElement(meta, "publication_time").text = metadata.publication_time
+            for key, value in meta_dict.items():
+                if value:
+                    etree.SubElement(meta, key).text = str(value)
 
         # Create document section
         etree.SubElement(root, "document")
@@ -87,7 +81,7 @@ class XMLAnnotator(AbstractAnnotator):
 
     def update_elements(self, document, update_fn):
         """
-        Iterate through the document and update text in elements.
+        Iterate through the document and update text in elements, including metadata.
 
         Args:
             document: The XML document.
@@ -96,15 +90,31 @@ class XMLAnnotator(AbstractAnnotator):
         Returns:
             The updated XML document.
         """
+        meta_element = document.find("metadata")
+        if meta_element is not None:
+            for element in meta_element.iter():
+                if element.text and element.tag in {"title", "author"}:
+                    updated_text, id = update_fn(element.text)
+                    element.text = updated_text
+                    if id:
+                        old_id = element.get("id")
+                        if old_id:
+                            element.set("id", f"{old_id}, {id}")
+                        else:
+                            element.set("id", id)
+
         doc_element = document.find("document")
-
-        for element in doc_element.iter():
-            if element.text and element.tag in {"p", "h", "q", "li", "ol", "ul"}:  # Ensure lists are included
-                updated_text, id = update_fn(element.text)
-
-                element.text = updated_text
-                if id:
-                    element.set("id", id)
+        if doc_element is not None:
+            for element in doc_element.iter():
+                if element.text and element.tag in {"p", "h", "q", "li"}:
+                    updated_text, id = update_fn(element.text)
+                    element.text = updated_text
+                    if id:
+                        old_id = element.get("id")
+                        if old_id:
+                            element.set("id", f"{old_id}, {id}")
+                        else:
+                            element.set("id", id)
 
         return document
 
