@@ -88,6 +88,13 @@ class SuspilneParser:
             annotator: Annotator to use for document creation
             document: Document to add elements to
         """
+
+        for explainer_popup in container.select("span.c-explainer__popup"):
+            explainer_popup.decompose()
+
+        for explainer_word in container.select("span.c-explainer__word"):
+            explainer_word.unwrap()
+
         # First, decode any Cloudflare protected emails in the container
         SuspilneParser._decode_cloudflare_emails(container)
 
