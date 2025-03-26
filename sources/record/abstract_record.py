@@ -5,12 +5,13 @@ class Metadata:
     """
     A class to store metadata about a text: source, author, title, language, publication time.
     """
-    def __init__(self, source: str, author: str, title: str, language: str, publication_time: str):
+    def __init__(self, source: str, author: str, title: str, language: str, publication_time: str, reference: str):
         self.source = source
         self.author = author
         self.title = title
         self.language = language
         self.publication_time = publication_time
+        self.reference = reference
 
 
 class AbstractRecord(ABC):

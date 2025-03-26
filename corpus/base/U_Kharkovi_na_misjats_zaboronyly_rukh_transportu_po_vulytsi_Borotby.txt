@@ -1,0 +1,17 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Альона Соболенко</author>
+    <title>У Харкові на місяць заборонили рух транспорту по вулиці Боротьби</title>
+    <language>uk</language>
+    <publication_time>2025-03-25T12:27+02:00</publication_time>
+    <reference>https://suspilne.media/kharkiv/978925-u-harkovi-na-misac-zaboronili-ruh-transportu-po-vulici-borotbi/</reference>
+  </metadata>
+  <document>
+    <h>У Харкові до 25 квітня заборонили рух транспорту по вулиці Боротьби на ділянці від вулиці Міжнародної до вулиці Немишлянської.</h>
+    <p>Про це 25 березня повідомили у пресслужбі Харківської міськради.</p>
+    <p>За її даними, заборона пов'язана із проведенням робіт на газопроводі.</p>
+    <p>"Об’їхати закриту ділянку можна прилеглими вулицями Міжнародною, Відродження, Профспілковою та іншими", — йдеться у повідомленні міськради.</p>
+    <p>Підписуйтесь на новини Харкова та області в Telegram, WhatsApp, Facebook, Viber, Instagram, Youtube</p>
+  </document>
+</root>

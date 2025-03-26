@@ -99,7 +99,7 @@ class AbstractAnnotator(ABC):
 
     def update_elements(self, document, update_fn):
         """
-        Iterate through the document and update text in elements.
+        Iterate through the document and update text in elements, including metadata.
 
         Args:
             document: The XML document.
