@@ -1,0 +1,17 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Марія Солодовнік</author>
+    <title>У квітні очікується погода тепліша за кліматичну норму: дані синоптиків Харківщини</title>
+    <language>uk</language>
+    <publication_time>2025-03-25T20:08+02:00</publication_time>
+    <reference>https://suspilne.media/kharkiv/979395-u-kvitni-ocikuetsa-pogoda-teplisa-za-klimaticnu-normu-dani-sinoptikiv-harkivsini/</reference>
+  </metadata>
+  <document>
+    <h>Погода у квітні 2025 року очікується тепла, а кількість опадів, які випадуть у Харківському регіоні будуть дорівнювати значенню багаторічних показників.</h>
+    <p>Про це повідомили у Харківському регіональному гідрометцентрі.</p>
+    <p>За його даними, у квітні 2025 року на Харківщині очікується 11,6° тепла, кліматична норма за період 1991-2020 років —  9,6° тепла.</p>
+    <p>Кількість опадів очікується на рівні 37 мм, це для Харківської області норма за показниками попередніх років.</p>
+    <p>Підписуйтесь на новини Харкова та області в Telegram, WhatsApp, Facebook, Viber, Instagram, Youtube</p>
+  </document>
+</root>

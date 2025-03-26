@@ -1,0 +1,17 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Савчук Юлія</author>
+    <title>Яку погоду очікувати 25 березня на Рівненщині</title>
+    <language>uk</language>
+    <publication_time>2025-03-25T07:50+02:00</publication_time>
+    <reference>https://suspilne.media/rivne/978505-aku-pogodu-ocikuvati-25-berezna-na-rivnensini/</reference>
+  </metadata>
+  <document>
+    <h>На Рівненщині 25 березня синоптики прогнозують хмарну погоду з проясненнями. Температура вдень може підвищитися до 15º тепла.</h>
+    <p>Про це поінформували у Facebook Рівненського обласного центру з гідрометеорології.</p>
+    <p>За даними у дописі, вдень очікують невеликий короткочасний дощ. Місцями — гроза. Вночі та вранці — місцями слабкий туман. Вітер — північно-західний, 7-12 м/с.</p>
+    <p>Температура на Рівненщині вдень — 10-15º тепла; у Рівному вдень — 12-14º тепла.</p>
+    <p>Суспільне Рівне в Telegram | Viber | Instagram | WhatsApp | YouTube | Facebook | TikTok</p>
+  </document>
+</root>
