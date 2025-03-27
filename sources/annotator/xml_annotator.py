@@ -151,3 +151,31 @@ class XMLAnnotator(AbstractAnnotator):
                 error_element = etree.SubElement(errors_section, "error")
                 error_element.text = error
                 error_element.set("id", id)
+
+    def split_elements(self, document,  split_s_fn, split_w_fn):
+        """
+        Split the document into sentences and words.
+
+        Args:
+            document: The XML document.
+            split_s_fn: A function that takes a string and returns a list of sentences.
+            split_w_fn: A function that takes a string and returns a list of words.
+
+        Returns:
+            The updated XML document.
+        """
+        doc_element = document.find("document")
+        if doc_element is not None:
+            for element in doc_element.iter():
+                if element.text and element.tag in {"p", "h", "q", "li"}:
+                    sentences = split_s_fn(element.text)
+                    element.text = None
+                    for sentence in sentences:
+                        s_element = etree.SubElement(element, "s")
+
+                        words = split_w_fn(sentence)
+                        for word in words:
+                            w_element = etree.SubElement(s_element, "t")
+                            w_element.text = word
+
+        return document

@@ -100,15 +100,13 @@ class AbstractAnnotator(ABC):
     def update_elements(self, document, update_fn):
         """
         Iterate through the document and update text in elements, including metadata.
-
-        Args:
-            document: The XML document.
-            update_fn: A function that takes a string and returns an updated string.
-
-        Returns:
-            The updated XML document.
         """
         pass
+
+    def split_elements(self, document, split_s_fn, split_w_fn):
+        """
+        Iterate through the document p, q, h, li elements and split it into s and w elements.
+        """
 
     def add_warnings(self, document, warnings):
         """

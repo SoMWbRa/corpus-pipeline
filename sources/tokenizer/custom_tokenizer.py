@@ -135,15 +135,21 @@ class CustomTokenizer(AbstractTokenizer):
     suffix_regex = spacy.util.compile_suffix_regex(COMBINING_DIACRITICS_TOKENIZER_SUFFIXES)
     infix_regex = spacy.util.compile_infix_regex(COMBINING_DIACRITICS_TOKENIZER_INFIXES)
 
-    def __init__(self):
+    def __init__(self, words: bool = True):
 
         # Download model if not already downloaded
         try:
             spacy.load("uk_core_news_sm")
         except OSError:
             os.system("python -m spacy download uk_core_news_sm")
+        self.words = words
 
-        self.nlp = spacy.load("uk_core_news_sm", enable=["parser"])
+        if self.words:
+            self.nlp = spacy.load("uk_core_news_sm", enable=["parser"])
+        else:
+            self.nlp = spacy.load("uk_core_news_sm", exclude=["parser"])
+            self.nlp.enable_pipe("senter")
+
         self.EXCEPTIONS_WITH_SPACES = []
         self.EXCEPTIONS = []
         self.nlp.tokenizer = self.setup_tokenizer(self.nlp)
@@ -151,11 +157,11 @@ class CustomTokenizer(AbstractTokenizer):
     def name(self) -> str:
         return "Custom Tokenizer"
 
-    def tokenize(self, text: str, words: bool = True) -> list:
+    def tokenize(self, text: str) -> list:
         doc = self.nlp(text)
         self.retokenize(doc, text)
 
-        if words:
+        if self.words:
             return [token.text for token in doc]
         else:
             return [sent.text for sent in doc.sents]
@@ -232,4 +238,16 @@ if __name__ == "__main__":
     actual_tokens = tokenizer.tokenize(raw_text)
 
     assert actual_tokens == expected_tokens, "Tokenization failed"
-    print("Tokenization successful")
+    print("Word tokenization successful")
+
+    tokenizer = CustomTokenizer(words=False)
+
+    sentences = [
+        "Користувачі соціальних мереж долучаються до низки груп, за допомогою яких шукають безвісти зниклих військових.",
+        "Адміністраторами таких груп можуть бути росіяни, які збирають про них інформацію."
+    ]
+
+    text = " ".join(sentences)
+
+    assert tokenizer.tokenize(text) == sentences, "Sentence tokenization failed"
+    print("Smoke: sentence tokenization successful")

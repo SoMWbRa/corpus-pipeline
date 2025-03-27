@@ -1,4 +1,5 @@
 from sources.evaluator.language_tool_evaluator import LanguageToolEvaluator
+from sources.tokenizer.custom_tokenizer import CustomTokenizer
 from sources.utils.sanitize_and_transliterate import sanitize_and_transliterate
 from sources.normalizer.news_normalizer import NewsNormalizer
 from sources.saver.file_saver import FileSaver
@@ -9,6 +10,10 @@ from sources.parser.suspilne_parser import SuspilneParser
 if __name__ == "__main__":
     corpus_path = "corpus"
     with LanguageToolEvaluator() as evaluator:
+
+        word_tokenizer = CustomTokenizer()
+        sentence_tokenizer = CustomTokenizer(words=False)
+
         for record in SuspilneSource.records(mock=True):
             title = record.metadata.title
             safe_title = sanitize_and_transliterate(title)
@@ -84,5 +89,17 @@ if __name__ == "__main__":
 
             saver = FileSaver(path=f"{corpus_path}/evaluated")
             saver.save(evaluated_text, name=f"{safe_title}.txt")
+
+            def split_s_fn(text: str) -> [str]:
+                return sentence_tokenizer.tokenize(text)
+
+            def split_w_fn(text: str) -> [str]:
+                return word_tokenizer.tokenize(text)
+
+            document = annotator.split_elements(document, split_s_fn, split_w_fn)
+            tokenized_text = annotator.get_string(document)
+
+            saver = FileSaver(path=f"{corpus_path}/tokenized")
+            saver.save(tokenized_text, name=f"{safe_title}.txt")
 
             print(f"Finished: {title}")

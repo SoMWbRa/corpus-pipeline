@@ -10,7 +10,7 @@ class AbstractTokenizer(ABC):
         pass
 
     @abstractmethod
-    def tokenize(self, text: str, words: bool = True) -> list:
+    def tokenize(self, text: str) -> list:
         """
         Tokenize the text.
         """
