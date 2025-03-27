@@ -1,0 +1,17 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author id="e1">Марія Солодовнік, Єлизавета Меньшикова, Ганна Цьомик, Альона Соболенко</author>
+    <title>Втрати Харківщини у березні 2025 року: згадуємо загиблих захисників поіменно</title>
+    <language>uk</language>
+    <publication_time>2025-03-26T14:20+02:00</publication_time>
+    <reference>https://suspilne.media/kharkiv/960647-vtrati-harkivsini-u-berezni-2025/</reference>
+  </metadata>
+  <document>
+    <h>Повідомлення про загибель захисників України на війні надходять з громад Харківської області, університетів та інших навчальних закладів. У березні 2025 року стало відомо про прощання з героями. Список, наведений у матеріалі Суспільного, не є повним.</h>
+  </document>
+  <warnings>
+    <warning id="e1">Message: Знайдено потенційну орфографічну помилку. Offset: 46. Replacement: Сьомик, Тьомик, Цьомки, Цьомок, Цьомчик</warning>
+  </warnings>
+  <errors/>
+</root>

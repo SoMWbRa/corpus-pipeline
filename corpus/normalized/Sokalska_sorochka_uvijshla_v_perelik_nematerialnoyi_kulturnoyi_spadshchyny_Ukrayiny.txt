@@ -4,7 +4,7 @@
     <author>Наталія Карнаух</author>
     <title>Сокальська сорочка увійшла в перелік нематеріальної культурної спадщини України</title>
     <language>uk</language>
-    <publication_time>2025-03-25T19:58+02:00</publication_time>
+    <publication_time>2025-03-26T10:06+02:00</publication_time>
     <reference>https://suspilne.media/lviv/979385-sokalska-sorocka-uvijsla-v-perelik-nematerialnoi-kulturnoi-spadsini-ukraini/</reference>
   </metadata>
   <document>

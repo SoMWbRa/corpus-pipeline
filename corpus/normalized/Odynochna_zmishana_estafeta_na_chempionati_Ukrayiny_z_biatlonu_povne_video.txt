@@ -1,0 +1,12 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <title>Одиночна змішана естафета на чемпіонаті України з біатлону: повне відео</title>
+    <language>uk</language>
+    <publication_time>2025-03-26T23:15+02:00</publication_time>
+    <reference>https://suspilne.media/sport/page/1385-mixed-relay-ukr25/</reference>
+  </metadata>
+  <document>
+    <h>Одиночна змішана естафета</h>
+  </document>
+</root>

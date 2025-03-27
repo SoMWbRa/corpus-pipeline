@@ -1,0 +1,24 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Оксана Швед</author>
+    <title>В одній із громад Черкащини 26 березня лунатимуть вибухи</title>
+    <language>uk</language>
+    <publication_time>2025-03-26T09:46+02:00</publication_time>
+    <reference>https://suspilne.media/cherkasy/979543-v-odnij-iz-gromad-cerkasini-26-berezna-lunatimut-vibuhi/</reference>
+  </metadata>
+  <document>
+    <h>У Золотоніській громаді на Черкащині 26 березня може бути чутно звуки вибухів.</h>
+    <p id="e1">Про це повідомив у телеграмі заступник міського голови Золотоноші Олександр Флоренко.</p>
+    <p>За словами посадовця, вибухи будуть плановими.</p>
+    <p>«Спеціалісти ДСНС планують здійснити плановий підрив виявлених раніше боєприпасів. Просимо зберігати спокій», — зазначив він.</p>
+    <p>Читайте нас у Telegram</p>
+    <p>Дивіться нас на YouTube</p>
+    <p>Підписуйтеся на WhatsApp</p>
+    <p>Вподобайте наш Instagram</p>
+  </document>
+  <warnings>
+    <warning id="e1">Message: Знайдено потенційну орфографічну помилку. Offset: 76. Replacement: Флор енко</warning>
+  </warnings>
+  <errors/>
+</root>

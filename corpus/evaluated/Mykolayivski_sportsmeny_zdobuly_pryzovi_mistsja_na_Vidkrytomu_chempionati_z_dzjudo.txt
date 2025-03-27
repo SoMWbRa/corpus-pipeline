@@ -1,0 +1,30 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author id="e1">Поліна Гожбур</author>
+    <title>Миколаївські спортсмени здобули призові місця на Відкритому чемпіонаті з дзюдо</title>
+    <language>uk</language>
+    <publication_time>2025-03-26T18:24+02:00</publication_time>
+    <reference>https://suspilne.media/mykolaiv/980157-mikolaivski-sportsmeni-zdobuli-prizovi-misca-na-vidkritomu-cempionati-z-dzudo/</reference>
+  </metadata>
+  <document>
+    <h>Миколаївські дзюдоїсти стали призерами Відкритого чемпіонату «Дитяча ліга Кіровоградщини». Змагання відбулись 22 березня у Кропивницькому.</h>
+    <p>Про це 26 березня повідомили в пресслужбі Миколаївської міської ради.</p>
+    <p>Вихованці Миколаївської дитячо-юнацької спортивної школи з єдиноборств здобули чотири медалі:</p>
+    <ul>
+      <li id="e2">«срібло» — Руслана Рябікіна та Адель Рябікіна;</li>
+      <li id="e3">«бронза» — Артем Рогожинський та Анатолій Черноморець.</li>
+    </ul>
+    <p id="e4">Тренує спортсменів Микола Пустохін.</p>
+    <p>Слідкуйте за головними новинами Миколаєва та області у WhatsApp, Telegram, Viber, YouTube, TikTok, Facebook та Instagram.</p>
+  </document>
+  <warnings>
+    <warning id="e1">Message: Знайдено потенційну орфографічну помилку. Offset: 7. Replacement: Пожбур</warning>
+    <warning id="e2">Message: Це речення не починається з великої літери. Offset: 1. Replacement: Срібло</warning>
+    <warning id="e3">Message: Це речення не починається з великої літери. Offset: 1. Replacement: Бронза</warning>
+    <warning id="e3">Message: Знайдено потенційну орфографічну помилку. Offset: 17. Replacement: Рогозинський, Рогожанський</warning>
+    <warning id="e3">Message: Знайдено потенційну орфографічну помилку. Offset: 42. Replacement: Чорноморець</warning>
+    <warning id="e4">Message: Знайдено потенційну орфографічну помилку. Offset: 26. Replacement: Пустовіт, Пустощі, Пустої, Пустові, Пустовій, Пустовім, Пустосі, Пустоха, Пустохи, Пустохо, Пустоход, Пустохою, Пустоху, Пустоші, Пустотні, Пустоті, Пустощів</warning>
+  </warnings>
+  <errors/>
+</root>

@@ -1,0 +1,15 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Поліна Мірер, Діана Козлова, Ганна Железняк</author>
+    <title>Обрядовий хліб та засудження військовополонених: головні новини Донецької та Луганської областей 26 березня</title>
+    <language>uk</language>
+    <publication_time>2025-03-26T06:40+02:00</publication_time>
+    <reference>https://suspilne.media/donbas/979431-golovni-novini-doneckoi-ta-luganskoi-oblastej-podii-26-berezna/</reference>
+  </metadata>
+  <document>
+    <h>Останні новини Донецької та Луганської областей 26 березня 2025 року, всі події, які відбуваються сьогодні в регіоні, онлайн-стрічка від редакції Суспільне Донбас.</h>
+    <h>Дивіться на YouTube наші репортажі та історії, підписуйтесь на наш Instagram, стежте за нами у Telegram, Facebook або WhatsApp.</h>
+    <h>Всі новини попереднього дня — 25 березня 2025 року.</h>
+  </document>
+</root>

@@ -1,0 +1,18 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author id="e1">Анна Косарінова, Ольга Вагнер, Валерія Шостак</author>
+    <title>Масована дронова атака на Кривий Ріг, збили 12 БпЛА, історії нацгвардійців. Головні новини Дніпра та області 26 березня</title>
+    <language>uk</language>
+    <publication_time>2025-03-26T21:28+02:00</publication_time>
+    <reference>https://suspilne.media/dnipro/979489-masovana-dronova-ataka-na-krivij-rig-zbili-12-bpla-pogoda-golovni-novini-dnipra-ta-oblasti-26-berezna/</reference>
+  </metadata>
+  <document>
+    <h id="e2">Оперативні новини Дніпра та Дніпропетровської області за 26 березня 2025 року читайте в хроніці подій від редакції Суспільне Дніпро.</h>
+  </document>
+  <warnings>
+    <warning id="e1">Message: Знайдено потенційну орфографічну помилку. Offset: 5. Replacement: Косарі нова</warning>
+    <warning id="e2">Message: Потенційна помилка: прикметник не узгоджений з іменником: "Суспільне": [с.р.: називний, знахідний] і "Дніпро": [ч.р.: називний, знахідний] Offset: 115. Replacement: суспільний Дніпро</warning>
+  </warnings>
+  <errors/>
+</root>

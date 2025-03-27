@@ -14,7 +14,7 @@ if __name__ == "__main__":
         word_tokenizer = CustomTokenizer()
         sentence_tokenizer = CustomTokenizer(words=False)
 
-        for record in SuspilneSource.records(mock=True):
+        for record in SuspilneSource.records(mock=False):
             title = record.metadata.title
             safe_title = sanitize_and_transliterate(title)
 
