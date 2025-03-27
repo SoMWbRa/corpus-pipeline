@@ -61,15 +61,7 @@ class SuspilneParser:
         Returns:
             Cleaned text
         """
-        # Unescape HTML entities (&quot; -> ", &amp; -> &, etc.)
-
-        if "&quot;" in text:
-            print(f"Found &quot; in text before: {text}")
-
         text = html.unescape(text)
-
-        if "&quot;" in text:
-            print(f"Found &quot; in text after")
 
         # Replace obfuscated email addresses with proper format
         # This is a simple example - might need to be enhanced for specific patterns
