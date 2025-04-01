@@ -1,0 +1,17 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Олена Попович</author>
+    <title>У передмісті Херсона через дронову атаку РФ є поранені</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T08:32+03:00</publication_time>
+    <reference>https://suspilne.media/kherson/983147-u-peredmisti-hersona-vid-ataki-drona-rf-postrazdali-ludi/</reference>
+  </metadata>
+  <document>
+    <h>У передмісті Херсона Антонівці від атаки дрона військових РФ постраждали чоловік та жінка.</h>
+    <p>Про це 31 березня в Telegram повідомив керівник Херсонської міської військової адміністрації Роман Мрочко.</p>
+    <p>У 67-річного чоловіка уламкові поранення обох ніг, його стан - тяжкий. 61-річна жінка отримала мінно-вибухову травму та уламкові поранення лівої голені та тулуба, йдеться у дописі.</p>
+    <p>Раніше у Херсонській ОВА повідомляли, що армія РФ атакувала дроном жінку у Дніпровському районі Херсона.</p>
+    <p>Підписуйтеся на новини Суспільне Херсон у WhatsApp, Facebook, Telegram, Viber, Instagram та YouTube.</p>
+  </document>
+</root>

@@ -1,0 +1,17 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Олена Попович</author>
+    <title>Параспортсменка Світлана Півень з Херсона посіла шосте місце на чемпіонаті Європи з легкої атлетики</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T13:41+03:00</publication_time>
+    <reference>https://suspilne.media/kherson/983467-parasportsmenka-svitlana-piven-z-hersona-posila-soste-misce-na-cempionati-evropi-z-legkoi-atletiki/</reference>
+  </metadata>
+  <document>
+    <h>Херсонська параспортсменка Світлана Півень посіла шосте місце на змаганнях зі штовхання ядра на чемпіонаті Європи з легкої атлетики.</h>
+    <p>Про це у Telegram повідомила Херсонська ОВА.</p>
+    <p>Учасниця збірної України, майстерка спорту Світлана Півень змагалась з іншими легкоатлетами з порушенням розумового та фізичного розвитку. Чемпіонат Європи з цього виду спорту відбувається у місті Еспоо (Фінляндія), йдеться у дописі.</p>
+    <p>Раніше в Херсонській ОВА повідомляли, що херсонка Тетяна Насонова виборола «золото» на чемпіонаті світу.</p>
+    <p>Підписуйтеся на новини Суспільне Херсон у WhatsApp, Facebook, Telegram, Viber, Instagram та YouTube.</p>
+  </document>
+</root>

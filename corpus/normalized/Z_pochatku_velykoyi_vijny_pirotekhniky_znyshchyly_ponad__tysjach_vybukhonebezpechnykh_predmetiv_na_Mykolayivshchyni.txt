@@ -1,0 +1,18 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Яна Тітуренко</author>
+    <title>З початку великої війни піротехніки знищили понад 27 тисяч вибухонебезпечних предметів на Миколаївщині</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T17:48+03:00</publication_time>
+    <reference>https://suspilne.media/mykolaiv/983815-z-pocatku-velikoi-vijni-pirotehniki-znisili-ponad-27-tisac-vibuhonebezpecnih-predmetiv-na-mikolaivsini-2/</reference>
+  </metadata>
+  <document>
+    <h>Піротехніки ДСНС вилучили та знищили понад 27 тисяч вибухонебезпечних предметів на Миколаївщині з початку повномасштабного вторгнення. До розмінування долучилися понад 12 тисяч рятувальників.</h>
+    <p>Про це повідомили у пресслужбі Головного управління ДСНС у Миколаївській області.</p>
+    <p>Станом на 31 березня 2025 року піротехніки ДСНС вилучили та знищили 27 888 вибухонебезпечних предметів.</p>
+    <p>«Загальна площа обстежених земель становить 11 252 гектарів», — йдеться у дописі.</p>
+    <p>У розмінуваннях брали участь 12 793 фахівці.</p>
+    <p>Слідкуйте за головними новинами Миколаєва та області у WhatsApp, Telegram, Viber, YouTube, TikTok, Facebook та Instagram.</p>
+  </document>
+</root>

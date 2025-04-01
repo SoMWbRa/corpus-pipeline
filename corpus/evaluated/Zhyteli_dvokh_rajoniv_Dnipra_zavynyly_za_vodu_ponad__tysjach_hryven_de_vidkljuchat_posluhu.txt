@@ -1,0 +1,73 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Анна Косарінова</author>
+    <title>Жителі двох районів Дніпра завинили за воду понад 400 тисяч гривень: де відключать послугу</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T08:30+03:00</publication_time>
+    <reference>https://suspilne.media/dnipro/982901-ziteli-dvoh-rajoniv-dnipra-zavinili-za-vodu-ponad-400-tisac-griven-de-vidklucat-poslugu/</reference>
+  </metadata>
+  <document>
+    <h id="w1">З 31 березня до 4 квітня жителям Амур-Нижньодніпровського та Новокодацького районів Дніпра відключатимуть водопостачання за борги. Бригади працюватимуть у приватному секторі.</h>
+    <p>Про це йдеться на сайті комунального підприємства «Дніпроводоканал».</p>
+    <p>Загальна сума боргу споживачів перевищила 408 тисяч гривень.</p>
+    <p>Амур-Нижньодніпровський район:</p>
+    <ul>
+      <li id="w2">вул. Берегова;</li>
+      <li id="w3">вул. Поздовжня;</li>
+      <li id="w4">вул. Симиренківська;</li>
+      <li id="w5">вул. Індустріальна;</li>
+      <li id="w6">вул. Бориса Антоненка-Давидовича;</li>
+      <li id="w7">вул. Кільцева;</li>
+      <li id="w8">вул. Роздільна;</li>
+      <li id="w9">вул. Торговельна.</li>
+    </ul>
+    <p id="w10">Новокодацький район, селище Таромське:</p>
+    <ul>
+      <li id="w11">вул. Нова;</li>
+      <li id="w12, w13">вул. Одарівська;</li>
+      <li id="w14">вул. Привокзальна;</li>
+      <li id="w15">вул. Дарвіна;</li>
+      <li id="w16">вул. Казкова;</li>
+      <li id="w17">вул. Марти Головіної;</li>
+      <li id="w18">вул. Металургів;</li>
+      <li id="w19">вул. Степана Чарнецького;</li>
+      <li id="w20">вул. Ямпольська;</li>
+      <li id="w21">вул. Роблена;</li>
+      <li id="w22, w23">вул. Євгена Жандарова;</li>
+      <li id="w24">вул. Осіння;</li>
+      <li id="w25">вул. Межова;</li>
+      <li id="w26">вул. Ріжкова.</li>
+    </ul>
+    <p id="w27">Читайте нас у Telegram: Суспільне Дніпро</p>
+  </document>
+  <warnings>
+    <warning id="w1">Message: Знайдено потенційну орфографічну помилку. Offset: 61. Replacement: Ново кодацького</warning>
+    <warning id="w2">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w3">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w4">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w5">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w6">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w7">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w8">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w9">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w10">Message: Знайдено потенційну орфографічну помилку. Offset: 0. Replacement: Ново кодацький</warning>
+    <warning id="w11">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w12">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w13">Message: Знайдено потенційну орфографічну помилку. Offset: 5. Replacement: Дарівська, Обарівська, Ожарівська, Ударівська, О дарівська, Ода рівська</warning>
+    <warning id="w14">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w15">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w16">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w17">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w18">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w19">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w20">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w21">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w22">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w23">Message: Знайдено потенційну орфографічну помилку. Offset: 12. Replacement: Жан дарова</warning>
+    <warning id="w24">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w25">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w26">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w27">Message: Потенційна помилка: прикметник не узгоджений з іменником: "Суспільне": [с.р.: називний, знахідний, кличний] і "Дніпро": [ч.р.: називний, знахідний] Offset: 24. Replacement: суспільний Дніпро</warning>
+  </warnings>
+</root>

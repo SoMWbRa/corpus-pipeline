@@ -1,0 +1,16 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Анна Рибальська</author>
+    <title>На Осокорках в Києві спалахнула автівка на дорозі</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T15:04+03:00</publication_time>
+    <reference>https://suspilne.media/kyiv/983587-na-osokorkah-v-kievi-spalahnula-avtivka-na-dorozi/</reference>
+  </metadata>
+  <document>
+    <h>У столиці вдень 31 березня зайнялась автівка під час руху в Дарницькому районі.</h>
+    <p>Про це повідомляє ДСНС.</p>
+    <p>Подія сталася близько 14:00 на вулиці Єлизавети Чавдар. З'ясували, що під час руху на проїжджій частині загорівся легковик. Пожежу ліквідували протягом півгодини.</p>
+    <p>Жертв та постраждалих під час цієї пожежі немає. Причину загоряння встановлюватимуть правоохоронці.</p>
+  </document>
+</root>

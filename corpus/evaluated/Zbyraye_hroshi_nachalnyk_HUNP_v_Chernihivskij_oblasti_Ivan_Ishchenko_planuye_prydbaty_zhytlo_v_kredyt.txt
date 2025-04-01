@@ -1,0 +1,22 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Віра Вархол</author>
+    <title>Збирає гроші: начальник ГУНП в Чернігівській області Іван Іщенко планує придбати житло в кредит</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T16:11+03:00</publication_time>
+    <reference>https://suspilne.media/chernihiv/983545-zbirae-grosi-nacalnik-gunp-v-cernigivskij-oblasti-ivan-isenko-planue-pridbati-zitlo-v-kredit/</reference>
+  </metadata>
+  <document>
+    <h>Начальник ГУНП в Чернігівській області Іван Іщенко планує придбати житло в кредит. В якому саме місті, поки ще не визначився.</h>
+    <p>Про це він розповів в інтервʼю Суспільному. З його слів, наразі у нього взагалі немає свого житла.</p>
+    <q id="w1, w2">«Я накопичую поступово. Зараз хочу скористатися кредитом по “єОселя”. Буду звертатися і отримувати пільговий кредит для покупки житла».</q>
+    <p>У Чернігові Іван Іщенко поки орендує приватний будинок.</p>
+    <q>«В середньому він обходиться у 20 тисяч гривень. Це мої особисті гроші», — сказав начальник ГУНП в Чернігівській області Іван Іщенко.</q>
+    <p>Підписуйтесь на Суспільне Чернігів і на інших платформах: Telegram, Facebook, Viber, YouTube, WhatsApp, TikTok.</p>
+  </document>
+  <warnings>
+    <warning id="w1">Message: Знайдено потенційну орфографічну помилку. Offset: 61. Replacement: оселя, Оселя, є Оселя</warning>
+    <warning id="w2">Message: Між двома голосними варто писати й: звертатися «й» отримувати, звертатися «та» отримувати Offset: 86. Replacement: й, та</warning>
+  </warnings>
+</root>

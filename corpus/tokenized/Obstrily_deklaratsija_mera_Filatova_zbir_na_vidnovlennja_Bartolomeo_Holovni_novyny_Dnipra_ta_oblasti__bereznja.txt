@@ -1,0 +1,39 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Анна Косарінова, Ірина Руденко, Ольга Вагнер</author>
+    <title>Обстріли, декларація мера Філатова, збір на відновлення «Бартоломео». Головні новини Дніпра та області 31 березня</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T20:11+03:00</publication_time>
+    <reference>https://suspilne.media/dnipro/983117-golovni-novini-dnipra-ta-oblasti-31-berezna-2/</reference>
+  </metadata>
+  <document>
+    <h id="w1">
+      <s>
+        <t>Оперативні</t>
+        <t>новини</t>
+        <t>Дніпра</t>
+        <t>та</t>
+        <t>Дніпропетровської</t>
+        <t>області</t>
+        <t>за</t>
+        <t>31</t>
+        <t>березня</t>
+        <t>2025</t>
+        <t>року</t>
+        <t>читайте</t>
+        <t>в</t>
+        <t>хроніці</t>
+        <t>подій</t>
+        <t>від</t>
+        <t>редакції</t>
+        <t>Суспільне</t>
+        <t>Дніпро</t>
+        <t>.</t>
+      </s>
+    </h>
+  </document>
+  <warnings>
+    <warning id="w1">Message: Потенційна помилка: прикметник не узгоджений з іменником: "Суспільне": [с.р.: називний, знахідний] і "Дніпро": [ч.р.: називний, знахідний] Offset: 115. Replacement: суспільний Дніпро</warning>
+  </warnings>
+</root>

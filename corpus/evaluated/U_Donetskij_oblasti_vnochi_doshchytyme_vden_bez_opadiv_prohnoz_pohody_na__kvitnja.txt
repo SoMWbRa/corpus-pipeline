@@ -1,0 +1,25 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Суспільне</author>
+    <title>У Донецькій області вночі дощитиме, вдень без опадів: прогноз погоди на 1 квітня</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T14:57+03:00</publication_time>
+    <reference>https://suspilne.media/donbas/983561-u-doneckij-oblasti-vnoci-dositime-vden-bez-opadiv-prognoz-pogodi-na-1-kvitna/</reference>
+  </metadata>
+  <document>
+    <h>В перший день квітня у Донецькій області вночі дощитиме, вдень — без опадів. 1 квітня буде хмарно з проясненнями. Синоптики прогнозують, що температура повітря вдень прогріється на кілька градусів більше аніж у попередні дні.</h>
+    <p>Про це йдеться на сайті Українського гідрометеорологічного центру.</p>
+    <p>«Вночі вітер північно-західний від 7 до 12 метрів на секунду, вдень — західний від 7 до 12 метрів на секунду», — розповіли у гідрометцентрі.</p>
+    <h>Якою буде температура у Донецькій області:</h>
+    <ul>
+      <li id="w1">вночі від 8 градусів тепла до 10.</li>
+      <li id="w2">вдень від 15 градусів тепла до 17.</li>
+    </ul>
+    <p>Читайте всі новини Донбасу в Telegram, WhatsApp, Facebook, YouTube, TikTok, Instagram</p>
+  </document>
+  <warnings>
+    <warning id="w1">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вночі</warning>
+    <warning id="w2">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вдень</warning>
+  </warnings>
+</root>

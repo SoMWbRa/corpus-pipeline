@@ -1,0 +1,17 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Савчук Юлія</author>
+    <title>Яку погоду прогнозують рівненські синоптики на 31 березня</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T07:50+03:00</publication_time>
+    <reference>https://suspilne.media/rivne/983019-aku-pogodu-prognozuut-rivnenski-sinoptiki-na-31-berezna/</reference>
+  </metadata>
+  <document>
+    <h>На Рівненщині 31 березня синоптики прогнозують хмарну погоду з проясненнями.  Температура повітря вдень може підвищитися до 15º тепла.</h>
+    <p>Про це поінформували у Facebook Рівненського обласного центру з гідрометеорології.</p>
+    <p>За даними у дописі, вранці та вдень очікують невеликий короткочасний дощ. Вітер — східний, 5-10 м/с.</p>
+    <p>Температура на Рівненщині вдень — 10-15º тепла; у Рівному вдень — 12-14º тепла.</p>
+    <p>Суспільне Рівне в Telegram | Viber | Instagram | WhatsApp | YouTube | Facebook | TikTok</p>
+  </document>
+</root>

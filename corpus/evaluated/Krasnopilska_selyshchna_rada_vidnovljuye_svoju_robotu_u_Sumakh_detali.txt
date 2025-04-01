@@ -1,0 +1,41 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Вікторія Грамм</author>
+    <title>Краснопільська селищна рада відновлює свою роботу у Сумах: деталі</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T12:39+03:00</publication_time>
+    <reference>https://suspilne.media/sumy/983373-krasnopilska-selisna-rada-vidnovlue-svou-robotu-u-sumah-detali/</reference>
+  </metadata>
+  <document>
+    <h>Краснопільська селищна рада відновлює свою роботу у Сумах по вул. Ярослава Мудрого, 71.</h>
+    <p>Про це повідомили у селищній раді.</p>
+    <p>Вона працюватиме з 8:00 до 16:00.</p>
+    <p>У повідомленні нагадали, що відділ комунального майна, ЦНАП приймають заявки на знищене та пошкоджене майно. Також оформлення документів в разі евакуації жителів Краснопільської громади здійснюється у Сумах на вул. Ковпака, 7.</p>
+    <h>Які саме послуги можна отримати:</h>
+    <ul>
+      <li id="w1">оформлення довідки про евакуацію;</li>
+      <li id="w2">реєстрація на надання грошової допомоги;</li>
+      <li id="w3">оформлення довідки внутрішньо переміщеної особи;</li>
+      <li id="w4">забезпечення житлом (в разі потреби);</li>
+      <li id="w5">надання гуманітарної допомоги.</li>
+    </ul>
+    <h>Телефони для довідок:</h>
+    <ul>
+      <li>+380 (96) 385-26-59;</li>
+      <li>+380 (96) 872-68-48;</li>
+      <li>+380 (50) 054-59-15.</li>
+    </ul>
+    <p>Читайте Суспільне у Telegram та WhatsApp</p>
+    <p>Дивіться нас у YouTube та TikTok</p>
+    <p>Долучайтесь до нашої спільноти у Viber та Facebook</p>
+    <p>Підписуйтеся на наш Instagram</p>
+  </document>
+  <warnings>
+    <warning id="w1">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Оформлення</warning>
+    <warning id="w2">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Реєстрація</warning>
+    <warning id="w3">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Оформлення</warning>
+    <warning id="w4">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Забезпечення</warning>
+    <warning id="w5">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Надання</warning>
+  </warnings>
+</root>

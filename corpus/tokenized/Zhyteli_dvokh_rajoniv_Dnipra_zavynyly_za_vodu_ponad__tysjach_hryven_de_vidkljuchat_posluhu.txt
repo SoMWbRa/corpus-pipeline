@@ -1,0 +1,288 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Анна Косарінова</author>
+    <title>Жителі двох районів Дніпра завинили за воду понад 400 тисяч гривень: де відключать послугу</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T08:30+03:00</publication_time>
+    <reference>https://suspilne.media/dnipro/982901-ziteli-dvoh-rajoniv-dnipra-zavinili-za-vodu-ponad-400-tisac-griven-de-vidklucat-poslugu/</reference>
+  </metadata>
+  <document>
+    <h id="w1">
+      <s>
+        <t>З</t>
+        <t>31</t>
+        <t>березня</t>
+        <t>до</t>
+        <t>4</t>
+        <t>квітня</t>
+        <t>жителям</t>
+        <t>Амур-Нижньодніпровського</t>
+        <t>та</t>
+        <t>Новокодацького</t>
+        <t>районів</t>
+        <t>Дніпра</t>
+        <t>відключатимуть</t>
+        <t>водопостачання</t>
+        <t>за</t>
+        <t>борги</t>
+        <t>.</t>
+      </s>
+      <s>
+        <t>Бригади</t>
+        <t>працюватимуть</t>
+        <t>у</t>
+        <t>приватному</t>
+        <t>секторі</t>
+        <t>.</t>
+      </s>
+    </h>
+    <p>
+      <s>
+        <t>Про</t>
+        <t>це</t>
+        <t>йдеться</t>
+        <t>на</t>
+        <t>сайті</t>
+        <t>комунального</t>
+        <t>підприємства</t>
+        <t>«</t>
+        <t>Дніпроводоканал</t>
+        <t>»</t>
+        <t>.</t>
+      </s>
+    </p>
+    <p>
+      <s>
+        <t>Загальна</t>
+        <t>сума</t>
+        <t>боргу</t>
+        <t>споживачів</t>
+        <t>перевищила</t>
+        <t>408</t>
+        <t>тисяч</t>
+        <t>гривень</t>
+        <t>.</t>
+      </s>
+    </p>
+    <p>
+      <s>
+        <t>Амур-Нижньодніпровський</t>
+        <t>район</t>
+        <t>:</t>
+      </s>
+    </p>
+    <ul>
+      <li id="w2">
+        <s>
+          <t>вул.</t>
+          <t>Берегова</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w3">
+        <s>
+          <t>вул.</t>
+          <t>Поздовжня</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w4">
+        <s>
+          <t>вул.</t>
+          <t>Симиренківська</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w5">
+        <s>
+          <t>вул.</t>
+          <t>Індустріальна</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w6">
+        <s>
+          <t>вул.</t>
+          <t>Бориса</t>
+          <t>Антоненка-Давидовича</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w7">
+        <s>
+          <t>вул.</t>
+          <t>Кільцева</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w8">
+        <s>
+          <t>вул.</t>
+          <t>Роздільна</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w9">
+        <s>
+          <t>вул.</t>
+          <t>Торговельна</t>
+          <t>.</t>
+        </s>
+      </li>
+    </ul>
+    <p id="w10">
+      <s>
+        <t>Новокодацький</t>
+        <t>район</t>
+        <t>,</t>
+        <t>селище</t>
+        <t>Таромське</t>
+        <t>:</t>
+      </s>
+    </p>
+    <ul>
+      <li id="w11">
+        <s>
+          <t>вул.</t>
+          <t>Нова</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w12, w13">
+        <s>
+          <t>вул.</t>
+          <t>Одарівська</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w14">
+        <s>
+          <t>вул.</t>
+          <t>Привокзальна</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w15">
+        <s>
+          <t>вул.</t>
+          <t>Дарвіна</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w16">
+        <s>
+          <t>вул.</t>
+          <t>Казкова</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w17">
+        <s>
+          <t>вул.</t>
+          <t>Марти</t>
+          <t>Головіної</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w18">
+        <s>
+          <t>вул.</t>
+          <t>Металургів</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w19">
+        <s>
+          <t>вул.</t>
+          <t>Степана</t>
+          <t>Чарнецького</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w20">
+        <s>
+          <t>вул.</t>
+          <t>Ямпольська</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w21">
+        <s>
+          <t>вул.</t>
+          <t>Роблена</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w22, w23">
+        <s>
+          <t>вул.</t>
+          <t>Євгена</t>
+          <t>Жандарова</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w24">
+        <s>
+          <t>вул.</t>
+          <t>Осіння</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w25">
+        <s>
+          <t>вул.</t>
+          <t>Межова</t>
+          <t>;</t>
+        </s>
+      </li>
+      <li id="w26">
+        <s>
+          <t>вул.</t>
+          <t>Ріжкова</t>
+          <t>.</t>
+        </s>
+      </li>
+    </ul>
+    <p id="w27">
+      <s>
+        <t>Читайте</t>
+        <t>нас</t>
+        <t>у</t>
+        <t>Telegram</t>
+        <t>:</t>
+        <t>Суспільне</t>
+        <t>Дніпро</t>
+      </s>
+    </p>
+  </document>
+  <warnings>
+    <warning id="w1">Message: Знайдено потенційну орфографічну помилку. Offset: 61. Replacement: Ново кодацького</warning>
+    <warning id="w2">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w3">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w4">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w5">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w6">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w7">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w8">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w9">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w10">Message: Знайдено потенційну орфографічну помилку. Offset: 0. Replacement: Ново кодацький</warning>
+    <warning id="w11">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w12">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w13">Message: Знайдено потенційну орфографічну помилку. Offset: 5. Replacement: Дарівська, Обарівська, Ожарівська, Ударівська, О дарівська, Ода рівська</warning>
+    <warning id="w14">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w15">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w16">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w17">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w18">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w19">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w20">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w21">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w22">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w23">Message: Знайдено потенційну орфографічну помилку. Offset: 12. Replacement: Жан дарова</warning>
+    <warning id="w24">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w25">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w26">Message: Це речення не починається з великої літери. Offset: 0. Replacement: Вул</warning>
+    <warning id="w27">Message: Потенційна помилка: прикметник не узгоджений з іменником: "Суспільне": [с.р.: називний, знахідний, кличний] і "Дніпро": [ч.р.: називний, знахідний] Offset: 24. Replacement: суспільний Дніпро</warning>
+  </warnings>
+</root>

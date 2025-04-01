@@ -1,0 +1,18 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Поліна Мірер, Діана Козлова, Ганна Железняк</author>
+    <title>Декларації чиновників та небезпечна евакуація: головні новини Донецької та Луганської областей 31 березня</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T06:42+03:00</publication_time>
+    <reference>https://suspilne.media/donbas/983093-golovni-novini-doneckoi-ta-luganskoi-oblastej-podii-31-berezna/</reference>
+  </metadata>
+  <document>
+    <h id="w1">Останні новини Донецької та Луганської областей 31 березня 2025 року, всі події, які відбуваються сьогодні в регіоні, онлайн-стрічка від редакції Суспільне Донбас.</h>
+    <h>Дивіться на YouTube наші репортажі та історії, підписуйтесь на наш Instagram, стежте за нами у Telegram, Facebook або WhatsApp.</h>
+    <h>Всі новини попереднього дня — 30 березня 2025 року.</h>
+  </document>
+  <warnings>
+    <warning id="w1">Message: Потенційна помилка: прикметник не узгоджений з іменником: "Суспільне": [с.р.: називний, знахідний] і "Донбас": [ч.р.: називний, знахідний] Offset: 146. Replacement: суспільний Донбас</warning>
+  </warnings>
+</root>

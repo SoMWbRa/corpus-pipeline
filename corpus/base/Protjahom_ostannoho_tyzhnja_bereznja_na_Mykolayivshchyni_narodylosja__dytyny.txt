@@ -1,0 +1,17 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Валерія Гавриш</author>
+    <title>Протягом останнього тижня березня на Миколаївщині народилося 72 дитини</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T13:19+03:00</publication_time>
+    <reference>https://suspilne.media/mykolaiv/983337-protagom-ostannogo-tizna-berezna-na-mikolaivsini-narodilosa-72-ditini/</reference>
+  </metadata>
+  <document>
+    <h>Протягом тижня, з 24 по 30 березня, у пологових будинках Миколаївщини народилися 33 дівчинки та 39 хлопчиків.</h>
+    <p>Про це повідомляє Управління охорони здоров'я Миколаївської області.</p>
+    <p>З найменшою вагою 740 грамів народилась дитина в КНП Миколаївської міської ради "Пологовий будинок №1".</p>
+    <p>В обласному центрі з 21 до 28 березня з’явилися на світ 36 дітей — 19 дівчат та 17 хлопчиків, — повідомили в Миколаївській міській раді.</p>
+    <p>Слідкуйте за головними новинами Миколаєва та області у WhatsApp, Telegram, Viber, YouTube, TikTok, Facebook та Instagram.</p>
+  </document>
+</root>

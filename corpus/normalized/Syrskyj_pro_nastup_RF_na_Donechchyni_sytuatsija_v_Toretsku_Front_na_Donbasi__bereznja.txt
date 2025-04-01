@@ -1,0 +1,13 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Андрій Коник, Діана Козлова, Антон Степура, Поліна Мірер</author>
+    <title>Сирський про наступ РФ на Донеччині, ситуація в Торецьку. Фронт на Донбасі 31 березня</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T08:39+03:00</publication_time>
+    <reference>https://suspilne.media/donbas/960055-posilenna-tisku-pid-pokrovskom-ponad-sotnu-atak-i-boiv-za-dobu-front-na-donbasi-31-berezna/</reference>
+  </metadata>
+  <document>
+    <h>31 березня — ситуація на фронті у Донецькій та Луганській областях, мапа бойових дій на Донбасі, бої у Торецьку та Часовому Яру, штурми Білогорівки на Сіверському фронті, оборона Покровська та Мирнограда, Новопавлівський та Лиманський напрямки — що відомо по бої на сході у березні.</h>
+  </document>
+</root>

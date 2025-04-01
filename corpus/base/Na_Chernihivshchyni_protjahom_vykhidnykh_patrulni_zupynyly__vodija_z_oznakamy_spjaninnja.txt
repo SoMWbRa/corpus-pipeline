@@ -1,0 +1,17 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Денис Шапошніков</author>
+    <title>На Чернігівщині протягом вихідних патрульні зупинили 31 водія з ознаками сп'яніння</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T10:40+03:00</publication_time>
+    <reference>https://suspilne.media/chernihiv/983183-na-cernigivsini-protagom-vihidnih-patrulni-zupinili-31-vodia-z-oznakami-spaninna/</reference>
+  </metadata>
+  <document>
+    <h>Протягом вихідних 29-30 березня патрульні поліцейські виявили на Чернігівщині та задокументували 31 факт керування авто водіями з ознаками сп’яніння.</h>
+    <p>Про це повідомляє патрульна поліція Чернігівської області на своїй Facebook-сторінці.</p>
+    <p>По кожному з випадків правоохоронці склали адміністративні матеріали, які пізніше направлять до суду.</p>
+    <p>Нагадаємо, що це вже треті вихідні поспіль, коли правоохоронці виявляють понад 25 фактів керування авто водіями з ознаками сп’яніння.</p>
+    <p>Підписуйтесь на Суспільне Чернігів і на інших платформах: Telegram, Facebook, Viber, YouTube, WhatsApp, TikTok.</p>
+  </document>
+</root>

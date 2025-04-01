@@ -1,0 +1,66 @@
+<root>
+  <metadata>
+    <source>Суспільне Новини | Suspilne Novyny</source>
+    <author>Андрій Коник, Діана Козлова, Антон Степура, Поліна Мірер</author>
+    <title>Сирський про наступ РФ на Донеччині, ситуація в Торецьку. Фронт на Донбасі 31 березня</title>
+    <language>uk</language>
+    <publication_time>2025-03-31T08:39+03:00</publication_time>
+    <reference>https://suspilne.media/donbas/960055-posilenna-tisku-pid-pokrovskom-ponad-sotnu-atak-i-boiv-za-dobu-front-na-donbasi-31-berezna/</reference>
+  </metadata>
+  <document>
+    <h>
+      <s>
+        <t>31</t>
+        <t>березня</t>
+        <t>—</t>
+        <t>ситуація</t>
+        <t>на</t>
+        <t>фронті</t>
+        <t>у</t>
+        <t>Донецькій</t>
+        <t>та</t>
+        <t>Луганській</t>
+        <t>областях</t>
+        <t>,</t>
+        <t>мапа</t>
+        <t>бойових</t>
+        <t>дій</t>
+        <t>на</t>
+        <t>Донбасі</t>
+        <t>,</t>
+        <t>бої</t>
+        <t>у</t>
+        <t>Торецьку</t>
+        <t>та</t>
+        <t>Часовому</t>
+        <t>Яру</t>
+        <t>,</t>
+        <t>штурми</t>
+        <t>Білогорівки</t>
+        <t>на</t>
+        <t>Сіверському</t>
+        <t>фронті</t>
+        <t>,</t>
+        <t>оборона</t>
+        <t>Покровська</t>
+        <t>та</t>
+        <t>Мирнограда</t>
+        <t>,</t>
+        <t>Новопавлівський</t>
+        <t>та</t>
+        <t>Лиманський</t>
+        <t>напрямки</t>
+        <t>—</t>
+        <t>що</t>
+        <t>відомо</t>
+        <t>по</t>
+        <t>бої</t>
+        <t>на</t>
+        <t>сході</t>
+        <t>у</t>
+        <t>березні</t>
+        <t>.</t>
+      </s>
+    </h>
+  </document>
+</root>
