@@ -1,3 +1,4 @@
+from sources.corrector.no_changes_corrector import NoChangesCorrector
 from sources.evaluator.language_tool_evaluator import LanguageToolEvaluator
 from sources.tokenizer.custom_tokenizer import CustomTokenizer
 from sources.utils.sanitize_and_transliterate import sanitize_and_transliterate
@@ -64,24 +65,54 @@ if __name__ == "__main__":
             errors = []
 
 
-            def evaluate(text: str) -> (str, str):
+            def evaluate_and_correct(text: str) -> (str, str):
                 global counter
+
+                # Initialize corrector
+                corrector = NoChangesCorrector()
+
+                # Initial evaluation
                 new_warnings, new_errors = evaluator.evaluate(text)
-                print("Warnings: ", len(new_warnings))
-                print("Errors: ", len(new_warnings))
-                if new_errors or new_warnings:
+                print("Initial warnings:", len(new_warnings))
+                print("Initial errors:", len(new_errors))
+
+                # Apply correction cycle (limited to max_iterations to prevent infinite loops)
+                max_iterations = 3
+                iterations = 0
+                current_text = text
+                current_warnings = new_warnings
+                current_errors = new_errors
+
+                while iterations < max_iterations and (current_warnings or current_errors):
+                    # Apply corrections
+                    corrected_text, remaining_warnings, remaining_errors = corrector.correct(
+                        current_text, current_warnings, current_errors
+                    )
+
+                    # If no changes were made, or we reached max iterations, break the loop
+                    if corrected_text == current_text or iterations == max_iterations - 1:
+                        break
+
+                    # Re-evaluate the corrected text
+                    current_text = corrected_text
+                    current_warnings, current_errors = evaluator.evaluate(current_text)
+
+                    iterations += 1
+
+                # Generate id and store final warnings/errors
+                if current_warnings or current_errors:
                     id = f"e{counter}"
                     counter += 1
 
-                    warnings.append((id, new_warnings))
-                    errors.append((id, new_errors))
+                    warnings.append((id, current_warnings))
+                    errors.append((id, current_errors))
 
-                    return text, id
+                    return current_text, id
 
-                return text, None
+                return current_text, None
 
 
-            document = annotator.update_elements(document, evaluate)
+            document = annotator.update_elements(document, evaluate_and_correct)
 
             annotator.add_warnings(document, warnings)
             annotator.add_errors(document, errors)
