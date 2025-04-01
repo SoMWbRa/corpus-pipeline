@@ -19,7 +19,7 @@ class AbstractSource(ABC):
 
     @staticmethod
     @abstractmethod
-    def records(start: datetime, end: datetime) -> Iterator[AbstractRecord]:
+    def records(start: datetime, end: datetime):
         """
         Return an iterator of records.
         """

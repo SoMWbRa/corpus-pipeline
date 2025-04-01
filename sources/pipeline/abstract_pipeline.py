@@ -22,13 +22,14 @@ class AbstractPipeline(ABC):
         self.corrector = self.get_corrector()
         self.word_tokenizer, self.sentence_tokenizer = self.get_tokenizers()
 
-    def execute(self):
+    def execute(self, start, end):
         """
-        Execute the full pipeline.
+        Execute the full pipeline over the specified time range.
         """
         try:
+
             with self.evaluator:
-                for record in self.source.records():
+                for record in self.source.records(start=start, end=end):
                     self._process_record(record)
         except Exception as e:
             print(f"Pipeline execution error: {e}")
@@ -44,22 +45,32 @@ class AbstractPipeline(ABC):
         self.warning_counter = 1
         self.error_counter = 1
 
-        # Parse content
+        document = self._parse_document(record, safe_title)
+        document = self._normalize_document(document, safe_title)
+        document = self._evaluate_and_correct_document(document, safe_title)
+        document = self._tokenize_document(document, safe_title)
+
+        print(f"Finished: {title}")
+
+    def _parse_document(self, record, safe_title):
         document = self.parser.parse(record.content(), metadata=record.metadata, annotator=self.annotator)
         base_text = self.annotator.get_string(document)
         self.get_saver(f"{self.output_path}/base").save(base_text, name=f"{safe_title}.txt")
+        return document
 
-        # Normalize
+    def _normalize_document(self, document, safe_title):
         document = self._apply_normalization(document)
         normalized_text = self.annotator.get_string(document)
         self.get_saver(f"{self.output_path}/normalized").save(normalized_text, name=f"{safe_title}.txt")
+        return document
 
-        # Evaluate and correct
+    def _evaluate_and_correct_document(self, document, safe_title):
         document = self._apply_evaluation_correction(document)
         evaluated_text = self.annotator.get_string(document)
         self.get_saver(f"{self.output_path}/evaluated").save(evaluated_text, name=f"{safe_title}.txt")
+        return document
 
-        # Tokenize
+    def _tokenize_document(self, document, safe_title):
         document = self.annotator.split_elements(
             document,
             lambda text: self.sentence_tokenizer.tokenize(text),
@@ -67,39 +78,38 @@ class AbstractPipeline(ABC):
         )
         tokenized_text = self.annotator.get_string(document)
         self.get_saver(f"{self.output_path}/tokenized").save(tokenized_text, name=f"{safe_title}.txt")
-
-        print(f"Finished: {title}")
+        return document
 
     def _apply_normalization(self, document):
-        """
-        Apply normalization to document.
-        """
-        warnings = []
-        errors = []
+            """
+            Apply normalization to document.
+            """
+            warnings = []
+            errors = []
 
-        def normalize(text):
-            new_text, new_warnings, new_errors = self.normalizer.normalize(text)
+            def normalize(text):
+                new_text, new_warnings, new_errors = self.normalizer.normalize(text)
 
-            ids = []
-            for err in new_errors:
-                e_id = f"e{self.error_counter}"
-                self.error_counter += 1
-                errors.append((e_id, err))
-                ids.append(e_id)
+                ids = []
+                for err in new_errors:
+                    e_id = f"e{self.error_counter}"
+                    self.error_counter += 1
+                    errors.append((e_id, err))
+                    ids.append(e_id)
 
-            for warn in new_warnings:
-                w_id = f"w{self.warning_counter}"
-                self.warning_counter += 1
-                warnings.append((w_id, warn))
-                ids.append(w_id)
+                for warn in new_warnings:
+                    w_id = f"w{self.warning_counter}"
+                    self.warning_counter += 1
+                    warnings.append((w_id, warn))
+                    ids.append(w_id)
 
-            return new_text, ", ".join(ids) if ids else None
+                return new_text, ", ".join(ids) if ids else None
 
-        document = self.annotator.update_elements(document, normalize)
-        self.annotator.add_warnings(document, warnings)
-        self.annotator.add_errors(document, errors)
+            document = self.annotator.update_elements(document, normalize)
+            self.annotator.add_warnings(document, warnings)
+            self.annotator.add_errors(document, errors)
 
-        return document
+            return document
 
     def _apply_evaluation_correction(self, document):
         """
