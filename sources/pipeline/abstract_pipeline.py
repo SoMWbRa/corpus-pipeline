@@ -1,0 +1,174 @@
+from abc import ABC, abstractmethod
+
+from sources.utils.sanitize_and_transliterate import sanitize_and_transliterate
+
+
+class AbstractPipeline(ABC):
+    """
+    Abstract base class for processing pipelines.
+    Defines the full processing flow while subclasses provide specific components.
+    """
+
+    def __init__(self, output_path="corpus"):
+        """
+        Initialize the pipeline.
+        """
+        self.output_path = output_path
+        self.source = self.get_source()
+        self.annotator = self.get_annotator()
+        self.parser = self.get_parser()
+        self.normalizer = self.get_normalizer()
+        self.evaluator = self.get_evaluator()
+        self.corrector = self.get_corrector()
+        self.word_tokenizer, self.sentence_tokenizer = self.get_tokenizers()
+
+    def execute(self):
+        """
+        Execute the full pipeline.
+        """
+        try:
+            with self.evaluator:
+                for record in self.source.records(mock=True):
+                    self._process_record(record)
+        except Exception as e:
+            print(f"Pipeline execution error: {e}")
+
+    def _process_record(self, record):
+        """
+        Process a single record through the pipeline.
+        """
+        title = record.metadata.title
+        safe_title = sanitize_and_transliterate(title)
+        print(f"Processing: {title}")
+
+        # Initialize counter
+        self.counter = 1
+
+        # Parse content
+        document = self.parser.parse(record.content(), metadata=record.metadata, annotator=self.annotator)
+        base_text = self.annotator.get_string(document)
+        self.get_saver(f"{self.output_path}/base").save(base_text, name=f"{safe_title}.txt")
+
+        # Normalize
+        document = self._apply_normalization(document)
+        normalized_text = self.annotator.get_string(document)
+        self.get_saver(f"{self.output_path}/normalized").save(normalized_text, name=f"{safe_title}.txt")
+
+        # Evaluate and correct
+        document = self._apply_evaluation_correction(document)
+        evaluated_text = self.annotator.get_string(document)
+        self.get_saver(f"{self.output_path}/evaluated").save(evaluated_text, name=f"{safe_title}.txt")
+
+        # Tokenize
+        document = self.annotator.split_elements(
+            document,
+            lambda text: self.sentence_tokenizer.tokenize(text),
+            lambda text: self.word_tokenizer.tokenize(text)
+        )
+        tokenized_text = self.annotator.get_string(document)
+        self.get_saver(f"{self.output_path}/tokenized").save(tokenized_text, name=f"{safe_title}.txt")
+
+        print(f"Finished: {title}")
+
+    def _apply_normalization(self, document):
+        """
+        Apply normalization to document.
+        """
+        warnings = []
+        errors = []
+
+        def normalize(text):
+            new_text, new_warnings, new_errors = self.normalizer.normalize(text)
+
+            if new_errors or new_warnings:
+                id = f"e{self.counter}"
+                self.counter += 1
+                warnings.append((id, new_warnings))
+                errors.append((id, new_errors))
+                return new_text, id
+
+            return new_text, None
+
+        document = self.annotator.update_elements(document, normalize)
+        self.annotator.add_warnings(document, warnings)
+        self.annotator.add_errors(document, errors)
+
+        return document
+
+    def _apply_evaluation_correction(self, document):
+        """
+        Apply evaluation and correction to document.
+        """
+        warnings = []
+        errors = []
+
+        def evaluate_and_correct(text):
+
+            # Initial evaluation
+            new_warnings, new_errors = self.evaluator.evaluate(text)
+
+            # Apply correction cycle
+            max_iterations = 3
+            iterations = 0
+            current_text = text
+            current_warnings = new_warnings
+            current_errors = new_errors
+
+            while iterations < max_iterations and (current_warnings or current_errors):
+                corrected_text, remaining_warnings, remaining_errors = self.corrector.correct(
+                    current_text, current_warnings, current_errors
+                )
+
+                if corrected_text == current_text or iterations == max_iterations - 1:
+                    break
+
+                current_text = corrected_text
+                current_warnings, current_errors = self.evaluator.evaluate(current_text)
+                iterations += 1
+
+            if current_warnings or current_errors:
+                id = f"e{self.counter}"
+                self.counter += 1
+                warnings.append((id, current_warnings))
+                errors.append((id, current_errors))
+                return current_text, id
+
+            return current_text, None
+
+        document = self.annotator.update_elements(document, evaluate_and_correct)
+        self.annotator.add_warnings(document, warnings)
+        self.annotator.add_errors(document, errors)
+
+        return document
+
+    @abstractmethod
+    def get_source(self):
+        pass
+
+    @abstractmethod
+    def get_annotator(self):
+        pass
+
+    @abstractmethod
+    def get_parser(self):
+        pass
+
+    @abstractmethod
+    def get_normalizer(self):
+        pass
+
+    @abstractmethod
+    def get_evaluator(self):
+        pass
+
+    @abstractmethod
+    def get_corrector(self):
+        pass
+
+    @abstractmethod
+    def get_tokenizers(self):
+        pass
+
+    @abstractmethod
+    def get_saver(self, path):
+        pass
