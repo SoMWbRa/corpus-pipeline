@@ -93,7 +93,7 @@ class XMLAnnotator(AbstractAnnotator):
         meta_element = document.find("metadata")
         if meta_element is not None:
             for element in meta_element.iter():
-                if element.text and element.tag in {"title", "author"}:
+                if element.text and element.tag in {"title"}:
                     updated_text, id = update_fn(element.text)
                     element.text = updated_text
                     if id:
@@ -129,11 +129,11 @@ class XMLAnnotator(AbstractAnnotator):
         if warnings_section is None:
             warnings_section = etree.SubElement(document, "warnings")
 
-        for id, warnings in warnings:
-            for warning in warnings:
-                warning_element = etree.SubElement(warnings_section, "warning")
-                warning_element.text = warning
-                warning_element.set("id", id)
+        for id, warning in warnings:
+            warning_element = etree.SubElement(warnings_section, "warning")
+            warning_element.text = warning
+            warning_element.set("id", id)
+
 
     def add_errors(self, document, errors):
         """
@@ -146,11 +146,10 @@ class XMLAnnotator(AbstractAnnotator):
         if errors_section is None:
             errors_section = etree.SubElement(document, "errors")
 
-        for id, errors in errors:
-            for error in errors:
-                error_element = etree.SubElement(errors_section, "error")
-                error_element.text = error
-                error_element.set("id", id)
+        for id, error in errors:
+            error_element = etree.SubElement(errors_section, "error")
+            error_element.text = error
+            error_element.set("id", id)
 
     def split_elements(self, document,  split_s_fn, split_w_fn):
         """

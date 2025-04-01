@@ -28,7 +28,7 @@ class AbstractPipeline(ABC):
         """
         try:
             with self.evaluator:
-                for record in self.source.records(mock=True):
+                for record in self.source.records():
                     self._process_record(record)
         except Exception as e:
             print(f"Pipeline execution error: {e}")
@@ -41,8 +41,8 @@ class AbstractPipeline(ABC):
         safe_title = sanitize_and_transliterate(title)
         print(f"Processing: {title}")
 
-        # Initialize counter
-        self.counter = 1
+        self.warning_counter = 1
+        self.error_counter = 1
 
         # Parse content
         document = self.parser.parse(record.content(), metadata=record.metadata, annotator=self.annotator)
@@ -80,14 +80,20 @@ class AbstractPipeline(ABC):
         def normalize(text):
             new_text, new_warnings, new_errors = self.normalizer.normalize(text)
 
-            if new_errors or new_warnings:
-                id = f"e{self.counter}"
-                self.counter += 1
-                warnings.append((id, new_warnings))
-                errors.append((id, new_errors))
-                return new_text, id
+            ids = []
+            for err in new_errors:
+                e_id = f"e{self.error_counter}"
+                self.error_counter += 1
+                errors.append((e_id, err))
+                ids.append(e_id)
 
-            return new_text, None
+            for warn in new_warnings:
+                w_id = f"w{self.warning_counter}"
+                self.warning_counter += 1
+                warnings.append((w_id, warn))
+                ids.append(w_id)
+
+            return new_text, ", ".join(ids) if ids else None
 
         document = self.annotator.update_elements(document, normalize)
         self.annotator.add_warnings(document, warnings)
@@ -126,14 +132,20 @@ class AbstractPipeline(ABC):
                 current_warnings, current_errors = self.evaluator.evaluate(current_text)
                 iterations += 1
 
-            if current_warnings or current_errors:
-                id = f"e{self.counter}"
-                self.counter += 1
-                warnings.append((id, current_warnings))
-                errors.append((id, current_errors))
-                return current_text, id
+            ids = []
+            for err in current_errors:
+                e_id = f"e{self.error_counter}"
+                self.error_counter += 1
+                errors.append((e_id, err))
+                ids.append(e_id)
 
-            return current_text, None
+            for warn in current_warnings:
+                w_id = f"w{self.warning_counter}"
+                self.warning_counter += 1
+                warnings.append((w_id, warn))
+                ids.append(w_id)
+
+            return current_text, ", ".join(ids) if ids else None
 
         document = self.annotator.update_elements(document, evaluate_and_correct)
         self.annotator.add_warnings(document, warnings)
