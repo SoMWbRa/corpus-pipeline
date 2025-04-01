@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from datetime import datetime
 from typing import Iterator
 from sources.record.abstract_record import AbstractRecord
 
@@ -18,7 +19,7 @@ class AbstractSource(ABC):
 
     @staticmethod
     @abstractmethod
-    def records() -> Iterator[AbstractRecord]:
+    def records(start: datetime, end: datetime) -> Iterator[AbstractRecord]:
         """
         Return an iterator of records.
         """

@@ -20,7 +20,7 @@ class SuspilneSource(AbstractSource):
         return "Суспільне Новини | Suspilne Novyny"
 
     @staticmethod
-    def records(mock: bool = False) -> Iterator[SuspilneRecord]:
+    def records(start: datetime, end: datetime, mock: bool = False) -> Iterator[SuspilneRecord]:
         """
         Return an iterator of records.
         """
