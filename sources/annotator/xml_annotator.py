@@ -82,13 +82,6 @@ class XMLAnnotator(AbstractAnnotator):
     def update_elements(self, document, update_fn):
         """
         Iterate through the document and update text in elements, including metadata.
-
-        Args:
-            document: The XML document.
-            update_fn: A function that takes a string and returns an updated string.
-
-        Returns:
-            The updated XML document.
         """
         meta_element = document.find("metadata")
         if meta_element is not None:

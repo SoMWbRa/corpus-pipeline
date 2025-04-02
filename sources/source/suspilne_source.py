@@ -23,10 +23,6 @@ class SuspilneSource(AbstractSource):
 
     @staticmethod
     def records(start: datetime, end: datetime):
-        """
-        Return an iterator of records.
-        """
-
         for date in daterange(start, end):
             archive_url = f"https://suspilne.media/archive/{date.year}/{date.month}/{date.day}/"
             print(f"Processing: {archive_url}")
