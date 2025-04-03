@@ -81,35 +81,35 @@ class AbstractPipeline(ABC):
         return document
 
     def _apply_normalization(self, document):
-            """
-            Apply normalization to document.
-            """
-            warnings = []
-            errors = []
+        """
+        Apply normalization to document.
+        """
+        warnings = []
+        errors = []
 
-            def normalize(text):
-                new_text, new_warnings, new_errors = self.normalizer.normalize(text)
+        def normalize(text):
+            new_text, new_warnings, new_errors = self.normalizer.normalize(text)
 
-                ids = []
-                for err in new_errors:
-                    e_id = f"e{self.error_counter}"
-                    self.error_counter += 1
-                    errors.append((e_id, err))
-                    ids.append(e_id)
+            ids = []
+            for err in new_errors:
+                e_id = f"e{self.error_counter}"
+                self.error_counter += 1
+                errors.append((e_id, err))
+                ids.append(e_id)
 
-                for warn in new_warnings:
-                    w_id = f"w{self.warning_counter}"
-                    self.warning_counter += 1
-                    warnings.append((w_id, warn))
-                    ids.append(w_id)
+            for warn in new_warnings:
+                w_id = f"w{self.warning_counter}"
+                self.warning_counter += 1
+                warnings.append((w_id, warn))
+                ids.append(w_id)
 
-                return new_text, ", ".join(ids) if ids else None
+            return new_text, ", ".join(ids) if ids else None
 
-            document = self.annotator.update_elements(document, normalize)
-            self.annotator.add_warnings(document, warnings)
-            self.annotator.add_errors(document, errors)
+        document = self.annotator.update_elements(document, normalize)
+        self.annotator.add_warnings(document, warnings)
+        self.annotator.add_errors(document, errors)
 
-            return document
+        return document
 
     def _apply_evaluation_correction(self, document):
         """
