@@ -24,6 +24,8 @@ from spacy.lang.char_classes import (
 )
 from spacy.symbols import ORTH, NORM
 
+from sources.utils.save_tokens_as_table import save_tokens_as_table
+
 
 class CustomTokenizer(AbstractTokenizer):
     # Removed °, № from _other_symbols
@@ -251,3 +253,5 @@ if __name__ == "__main__":
 
     assert tokenizer.tokenize(text) == sentences, "Sentence tokenization failed"
     print("Smoke: sentence tokenization successful")
+
+    save_tokens_as_table(actual_tokens)
