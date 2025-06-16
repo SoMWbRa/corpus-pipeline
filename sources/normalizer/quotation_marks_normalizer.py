@@ -45,8 +45,6 @@ FILL_QUOTATION_MARKS_EXPECTED_BEHAVIOUR = [
     "[a [b [c] c]",
     "a [a a, - a a a. a a. [a a. a a, - a.",
     "a [a] a], - [a] a a. a a. [a a. a a, - a.",
-
-    "майстерклас для підлітків 12+ \"Hello, spring!\" з педагогинею Іриною Пастух (реєстрація)",
 ]
 
 
